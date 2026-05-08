@@ -118,7 +118,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         </div>
 
         {/* Description */}
-        <p className="text-cream/50 text-sm leading-relaxed mb-6 flex-1">
+        <p className="font-light tracking-tight text-cream text-sm leading-relaxed mb-6 flex-1">
           {project.description}
         </p>
 
@@ -187,7 +187,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-display text-[clamp(2rem,5vw,4rem)] font-light text-cream/80 mb-16 leading-tight"
+          className="font-display text-[clamp(2rem,5vw,4rem)] font-light font-light tracking-tight text-cream mb-16 leading-tight"
         >
           Things I&apos;ve
           <br />

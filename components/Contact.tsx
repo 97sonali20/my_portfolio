@@ -57,17 +57,17 @@ export default function Contact() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mb-20 text-center"
         >
-          <h2 className="font-display text-[clamp(3rem,10vw,8rem)] font-light leading-none text-cream/80">
+          <h2 className="font-display text-[clamp(3rem,10vw,8rem)] font-light leading-none font-light tracking-tight text-cream">
             Let&apos;s{" "}
             <span className="text-gradient font-semibold italic">
               work
             </span>
           </h2>
-          <h2 className="font-display text-[clamp(3rem,10vw,8rem)] font-light leading-none text-cream/80">
+          <h2 className="font-display text-[clamp(3rem,10vw,8rem)] font-light leading-none font-light tracking-tight text-cream">
             together
             <span className="text-gold">.</span>
           </h2>
-          <p className="text-cream/40 text-base mt-8 max-w-md mx-auto leading-relaxed">
+          <p className="font-light tracking-tight text-cream text-base mt-8 max-w-md mx-auto leading-relaxed">
             Available for freelance projects, full-time roles, and exciting collaborations.
             Let&apos;s build something remarkable.
           </p>
@@ -97,11 +97,11 @@ export default function Contact() {
                 <div>
                   <p className="font-mono text-[10px] text-muted tracking-widest uppercase">{label}</p>
                   {href ? (
-                    <a href={href} className="text-cream/70 hover:text-gold transition-colors text-sm font-body">
+                    <a href={href} className="font-light tracking-tight text-cream hover:text-gold transition-colors text-sm font-body">
                       {value}
                     </a>
                   ) : (
-                    <p className="text-cream/70 text-sm font-body">{value}</p>
+                    <p className="font-light tracking-tight text-cream text-sm font-body">{value}</p>
                   )}
                 </div>
               </div>
@@ -146,13 +146,13 @@ export default function Contact() {
               >
                 <div className="text-5xl mb-4">✨</div>
                 <h3 className="font-display text-2xl text-gradient mb-3">Thank you!</h3>
-                <p className="text-cream/50 text-sm">Your message was sent. I&apos;ll be in touch soon.</p>
+                <p className="font-light tracking-tight text-cream text-sm">Your message was sent. I&apos;ll be in touch soon.</p>
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="glow-border rounded-xl p-8 glass-card space-y-5">
                 {[
-                  { name: "name", label: "Your Name", type: "text", placeholder: "John Doe" },
-                  { name: "email", label: "Email Address", type: "email", placeholder: "hello@example.com" },
+                  { name: "name", label: "Your Name", type: "text", placeholder: "sonali" },
+                  { name: "email", label: "Email Address", type: "email", placeholder: "97sonali@gmail.com" },
                 ].map(({ name, label, type, placeholder }) => (
                   <div key={name}>
                     <label className="font-mono text-[10px] text-muted tracking-widest uppercase mb-2 block">

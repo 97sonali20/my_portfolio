@@ -69,7 +69,7 @@ function SkillBar({ name, level, delay }: { name: string; level: number; delay: 
   return (
     <div ref={ref} className="group">
       <div className="flex justify-between items-center mb-1.5">
-        <span className="font-body text-sm text-cream/70 group-hover:text-cream transition-colors">{name}</span>
+        <span className="font-body text-sm font-light tracking-tight text-cream group-hover:text-cream transition-colors">{name}</span>
         <span className="font-mono text-xs text-gold/60">{level}%</span>
       </div>
       <div className="h-px bg-border relative overflow-hidden">
@@ -124,7 +124,7 @@ export default function Skills() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-display text-[clamp(2rem,5vw,4rem)] font-light text-cream/80 mb-16 leading-tight"
+          className="font-display text-[clamp(2rem,5vw,4rem)] font-light font-light tracking-tight text-cream mb-16 leading-tight"
         >
           My technical
           <br />
@@ -172,7 +172,7 @@ export default function Skills() {
           <div className="marquee-inner gap-8">
             {[...techLogos, ...techLogos].map((tech, i) => (
               <span key={i} className="flex items-center gap-8 flex-shrink-0">
-                <span className="font-body font-semibold text-cream/30 text-sm tracking-widest uppercase whitespace-nowrap">
+                <span className="font-body font-semibold font-light tracking-tight text-cream text-sm tracking-widest uppercase whitespace-nowrap">
                   {tech}
                 </span>
                 <span className="text-gold/20 text-xs">✦</span>

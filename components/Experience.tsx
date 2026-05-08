@@ -126,7 +126,7 @@ function ExperienceCard({
         )}
 
         <div className="glow-border rounded-lg p-6 glass-card hover:border-gold/40 transition-all duration-500 group">
-          <p className="font-body font-semibold text-cream/90 text-sm mb-4 tracking-wide">
+          <p className="font-body font-semibold font-light tracking-tight text-cream text-sm mb-4 tracking-wide">
             {exp.role}
           </p>
 
@@ -134,7 +134,7 @@ function ExperienceCard({
             {exp.highlights.map((h, i) => (
               <li key={i} className="flex items-start gap-3">
                 <span className="mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: exp.accent }} />
-                <p className="text-cream/55 text-sm leading-relaxed">{h}</p>
+                <p className="font-light tracking-tight text-cream text-sm leading-relaxed">{h}</p>
               </li>
             ))}
           </ul>
@@ -188,7 +188,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="font-display text-[clamp(2rem,5vw,4rem)] font-light text-cream/80 mb-20 leading-tight"
+          className="font-display text-[clamp(2rem,5vw,4rem)] font-light font-light tracking-tight text-cream mb-20 leading-tight"
         >
           Where I&apos;ve been
           <br />

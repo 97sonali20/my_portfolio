@@ -70,7 +70,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-cream/60 leading-relaxed mb-6 text-base"
+              className="font-light tracking-tight text-cream leading-relaxed mb-6 text-base"
             >
               I&apos;m a Frontend UI/UX Developer based in Bhubaneswar, India with over
               3 years of experience turning complex UI/UX designs into high-performance,
@@ -82,7 +82,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.5 }}
-              className="text-cream/60 leading-relaxed mb-10 text-base"
+              className="font-light tracking-tight text-cream leading-relaxed mb-10 text-base"
             >
               From e-commerce checkout flows to live sports dashboards and event
               management apps, I&apos;ve built and led frontend development across diverse
@@ -129,7 +129,7 @@ export default function About() {
                   <p className="font-display text-xl font-semibold text-cream mb-1">
                     MCA
                   </p>
-                  <p className="text-cream/60 text-sm">
+                  <p className="font-light tracking-tight text-cream text-sm">
                     Trident Academy of Creative Technology
                   </p>
                   <p className="font-mono text-xs text-gold/60 mt-1">2018 – 2021</p>
@@ -138,7 +138,7 @@ export default function About() {
                   <p className="font-display text-xl font-semibold text-cream mb-1">
                     B.Sc.
                   </p>
-                  <p className="text-cream/60 text-sm">Bhadrak Women&apos;s College</p>
+                  <p className="font-light tracking-tight text-cream text-sm">Bhadrak Women&apos;s College</p>
                   <p className="font-mono text-xs text-gold/60 mt-1">2014 – 2017</p>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export default function About() {
                     (i) => (
                       <span
                         key={i}
-                        className="text-cream/50 text-xs font-mono"
+                        className="font-light tracking-tight text-cream text-xs font-mono"
                       >
                         {i}
                       </span>
@@ -191,7 +191,7 @@ export default function About() {
               <p className="font-display text-4xl md:text-5xl text-gradient font-semibold mb-2 group-hover:text-gradient-animated">
                 {stat.num}
               </p>
-              <p className="font-mono text-xs text-muted tracking-widest uppercase">
+              <p className="font-mono  text-xs text-muted tracking-widest uppercase">
                 {stat.label}
               </p>
             </motion.div>
